@@ -1,30 +1,31 @@
 {
-    "name": "assoconnect/your-repo",
+    "name": "assoconnect/php-percent",
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/assoconnect/your-repo/"
+            "url": "https://github.com/assoconnect/php-percent/"
         }
     ],
     "type": "library",
-    "description": "",
-    "keywords": ["php"],
-    "homepage": "https://github.com/assoconnect/your-repo/",
+    "description": "PHP object to handle percentage with MoneyPHP",
+    "keywords": ["php", "percent"],
+    "homepage": "https://github.com/assoconnect/php-percent/",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AssoConnect\\YourRepo\\": "src/"
+            "AssoConnect\\PHPPercent\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AssoConnect\\YourRepo\\Tests\\": "tests/"
+            "AssoConnect\\PHPPercent\\Tests\\": "tests/"
         }
     },
     "require-dev": {
         "phpunit/phpunit": "^9.2"
     },
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "moneyphp/money": "^3.3"
     }
 }
