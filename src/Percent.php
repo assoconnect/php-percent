@@ -20,6 +20,11 @@ class Percent
         return $this->value === $percent->value;
     }
 
+    public function toInteger(): int
+    {
+        return $this->value;
+    }
+
     public function toRatio(): float
     {
         return $this->value / 10000;
