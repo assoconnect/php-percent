@@ -8,5 +8,5 @@ Implementation of [Frederik Bosch's suggestion](https://github.com/moneyphp/mone
 ## Installation
 
 ```
-composer require assoconnect/your-repo
+composer require assoconnect/php-percent
 ```
