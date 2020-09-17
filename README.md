@@ -10,3 +10,7 @@ Implementation of [Frederik Bosch's suggestion](https://github.com/moneyphp/mone
 ```
 composer require assoconnect/php-percent
 ```
+
+## Usage
+
+All methods are self-documented as PHPDoc.
