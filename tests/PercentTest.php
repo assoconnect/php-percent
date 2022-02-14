@@ -13,14 +13,14 @@ class PercentTest extends TestCase
     public function testEquals(): void
     {
         $percent = new Percent(42);
-        $this->assertTrue($percent->equals(new Percent(42)));
-        $this->assertFalse($percent->equals(new Percent(24)));
+        self::assertTrue($percent->equals(new Percent(42)));
+        self::assertFalse($percent->equals(new Percent(24)));
     }
 
     public function testToRatio(): void
     {
         $percent = new Percent(4200);
-        $this->assertSame(0.42, $percent->toRatio());
+        self::assertSame(0.42, $percent->toRatio());
     }
 
     public function testApplyTo(): void
@@ -28,7 +28,7 @@ class PercentTest extends TestCase
         $percent = new Percent(4200);
         $amount = Money::EUR(10000);
         $amountPercent = Money::EUR(4200);
-        $this->assertEquals($amountPercent, $percent->applyTo($amount));
+        self::assertEquals($amountPercent, $percent->applyTo($amount));
     }
 
     public function testAddTo(): void
@@ -36,7 +36,7 @@ class PercentTest extends TestCase
         $percent = new Percent(4200);
         $amount = Money::EUR(10000);
         $amountAdd = Money::EUR(14200);
-        $this->assertEquals($amountAdd, $percent->addTo($amount));
+        self::assertEquals($amountAdd, $percent->addTo($amount));
     }
 
     public function testRemoveFrom(): void
@@ -44,6 +44,6 @@ class PercentTest extends TestCase
         $percent = new Percent(4200);
         $amount = Money::EUR(10000);
         $amountSubstract = Money::EUR(5800);
-        $this->assertEquals($amountSubstract, $percent->removeFrom($amount));
+        self::assertEquals($amountSubstract, $percent->removeFrom($amount));
     }
 }
