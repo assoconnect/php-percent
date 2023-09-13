@@ -51,7 +51,7 @@ class Percent
      */
     public function applyTo(Money $amount): Money
     {
-        return $amount->multiply($this->value / 10000, Money::ROUND_HALF_DOWN);
+        return $amount->multiply(sprintf('%.14F', $this->value / 10000), Money::ROUND_HALF_DOWN);
     }
 
     /**
