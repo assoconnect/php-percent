@@ -30,6 +30,6 @@
     },
     "require": {
         "php": "^7.4|^8.0",
-        "moneyphp/money": "^3.3"
+        "moneyphp/money": "^3.0|^4.0"
     }
 }
