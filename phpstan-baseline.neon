@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method AssoConnect\\PHPPercent\\Percent\:\:toRatio\(\) cannot have float as its return type \- floats are not allowed\.$#'
+			identifier: float.type
+			count: 1
+			path: src/Percent.php
